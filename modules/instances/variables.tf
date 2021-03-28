@@ -1,6 +1,6 @@
 variable "project_id" {
   description = "The project ID to host the network in"
-  default     = "#FILL IN YOUR PROJECT ID HERE"
+  default     = "qwiklabs-gcp-03-30270063856a"
 }
 
 variable "region" {
