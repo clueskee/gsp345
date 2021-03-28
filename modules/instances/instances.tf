@@ -17,7 +17,7 @@ provider "google" {
 resource "google_compute_instance" "default" {
   name         = "tf-instance-1"
   machine_type = "e2-medium"
-  zone         = "us-central1-a"
+  zone         = var.zone
 
   boot_disk {
     initialize_params {
@@ -28,7 +28,7 @@ resource "google_compute_instance" "default" {
 resource "google_compute_instance" "default" {
   name         = "tf-instance-2"
   machine_type = "e2-medium"
-  zone         = "us-central1-a"
+  zone         = var.zone
 
   boot_disk {
     initialize_params {
