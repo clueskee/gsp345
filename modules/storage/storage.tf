@@ -1,5 +1,9 @@
-resource "google_storage_bucket" "bucket" {
-  name               = var.name
-  project            = var.project_id
-  location           = "us-east1"
+provider "google" {
+  project     = "qwiklabs-gcp-00-99e3cfd38f35"
+  region      = "us-central-1"
+}
+
+resource "google_storage_bucket" "test-bucket-for-state" {
+  name        = "qwiklabs-gcp-00-99e3cfd38f35"
+  location    = "US"
 }
